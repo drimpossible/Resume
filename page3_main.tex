@@ -1,0 +1,189 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.1 (8/1/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{page3_formatting} % a4paper for A4
+\usepackage{color}
+\usepackage{multicol}
+\setlength{\columnsep}{2.5cm}
+\usepackage{pgf}
+\usepackage{pgfpages}
+%
+
+%-----------------------
+% COLORS
+%-----------------------
+
+\definecolor{forestgreen}{HTML}{228B22}
+
+
+\pgfpagesdeclarelayout{boxed}
+{
+  \edef\pgfpageoptionborder{3pt}
+}
+{
+  \pgfpagesphysicalpageoptions
+  {%
+    logical pages=1,%
+  }
+  \pgfpageslogicalpageoptions{1}
+  {
+    border code=\pgfsetlinewidth{2pt}\pgfstroke,%
+    border shrink=\pgfpageoptionborder,%
+    resized width=.95\pgfphysicalwidth,%
+    resized height=.95\pgfphysicalheight,%
+    center=\pgfpoint{.5\pgfphysicalwidth}{.5\pgfphysicalheight}%
+  }%
+}
+\pgfpagesuselayout{boxed}
+\setlength{\parindent}{2cm}
+
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\cvname{} % Your name
+% \cvjobtitle{Adventurer} % Job title/career
+
+% \cvdate{20 November 1996} % Date of birth
+% \cvaddress{OBH-22, IIIT Hyderabad\newline Hyderabad, India 500032} % Short address/location, use \newline if more than 1 line is required
+%\cvnumberphone{+91 8142060275} % Phone number
+%\cvmail{ http://bit.do/ameyaprabhu} % Email address
+%\cvmail{researchweb.iiit.ac.in/~ameya.prabhu} % Personal website
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	 ABOUT ME
+%----------------------------------------------------------------------------------------
+
+\aboutme{} % To have no About Me section, just remove all the text and leave \aboutme{}
+
+
+
+%----------------------------------------------------------------------------------------
+%	 Relevant Courses
+%----------------------------------------------------------------------------------------
+
+
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
+
+% \skills{{English/5}, {Spanish/4}, {German/2}, {French/4}}
+% \divider
+
+%\cvskill{Spanish}{4}
+% \divider
+
+%\cvskill{German}{3}
+
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+%\skills{{pursuer of rabbits/5.8},{good manners/4},{outgoing/4.3},{polite/4},{Java/0.01}}
+
+% \skills{{C++}{5}}
+
+%------------------------------------------------
+
+% Skill text section, each skill must have a value between 0 an 6
+% \skillstext{{lovely/4},{narcissistic/3}}
+
+%----------------------------------------------------------------------------------------
+
+\makeprofile % Print the sidebar
+%----------------------------------------------------------------------------------------
+%	 PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%---------------------------------------------------------------------------------------
+%\vspace{-0.6cm}
+\begin{twenty}
+
+\twentyitem{POS Tagging using Seq-Seq LSTMs posing it as SMT task}{}
+	{Implemented a sequence to sequence system for POS Tagging by modeling it as a statistical machine translation task, aimed at capturing dependencies from all over the entire sentence, instead of a specific window of words. It failed to beat standard tagging  methods.}{Monsoon'16}
+\twentyitem{Structured Tensors for Large Scale SBIR}{}
+	{Implemented a Sketch based Image Retrieval (SBIR) system using Structure Tensors \& Sketch Tokens. This allows fast online addition of new images to the database and efficient querying them by new and old Sketches.}{Monsoon'15}
+    \twentyitem{NLIDB System for processing Natural Language Queries}{}
+	{Developed a simple baseline Natural Language Interface to Database (NLIDB) system to convert a Natural Language (NL) query into a Structured Query Language (SQL) and then use the SQL query to retrieve information from databases.}{IASNLP Summer School '15}
+   
+    \twentyitem{Programming Projects}{}
+	{
+    \begin{enumerate}\vspace{0.15cm}
+      %\item[$\bullet$] Implemented a POS-Tagger using Seq-Seq LSTMs posing it as a SMT task.
+      \item[$\bullet$] Implemented a distributed banking sytem, and cryptographic protocols   using Diffie-Hellman Key Exchange Protocol using Java RMI.\vspace{0.1cm}
+      \item[$\bullet$] Implemented various parallel algorithms like sorting, computing MSTs and the games like Game of Life in MPI.\vspace{0.1cm}
+      \item[$\bullet$] Implemented a compiler for a subset of the C language using Flex and Bison for parsing, followed by generating ASTs and conversion to LLVM intermediate representations.\vspace{0.1cm}
+      \item[$\bullet$] Implemented graph and string processing algorithms along Data Structures like Seg-Trees, AVL-trees, Hash-Maps for Data Structure and Algorithms courses.\vspace{0.1cm}
+      \item[$\bullet$] Developed a mobile app security framework with a pipeline consisting of automatic decompilation from .apk to .java code, with static and dynamic code flow analysis along with various signature detection algorithms.\vspace{0.1cm}
+      \item[$\bullet$] Developed a bash shell in C++.\vspace{0.1cm}
+      
+     % Visited IISc for summer programme
+    \end{enumerate}
+    }{2015-Present}
+    
+    \twentyitem{\large \underline{Past Achievements and Awards}}{}
+	{
+    \begin{enumerate}   
+      \item[$\bullet$] Dean's Merit List holder for outstanding performance in Academics.\vspace{0.05cm}
+      \item[$\bullet$] Dean's Undergraduate Research Award holder for outstanding publications.\vspace{0.05cm}
+       \item[$\bullet$] Best intern poster awardee, IBM-Research for research performed during internship.\vspace{0.05cm}
+      \item[$\bullet$] Selected among the top 40 in India for International Chemistry Olympiad Training Camp (IChOTC)\vspace{0.05cm}
+      \item[$\bullet$] Selected in KVPY programme by Indian Institute of Sciences (IISc) in top 100 in India
+      %\item[$\bullet$]  In Top 0.1\% in JEE Mains and ftop 1\% of the shortlisted students for JEE Advanced across India
+    \end{enumerate}
+    }{}
+    \twentyitem{\large \underline{Workshops, Conferences and Schools Attended}}{}
+	{
+    \begin{enumerate}
+    \item[$\bullet$] Attended NeurIPS 2018 in Montreal, Canada to get more exposure to current research problems before PhD applications.\vspace{0.05cm}
+    \item[$\bullet$] Presented my work on Deep Expander Networks in an oral session at ECCV 2018 in Munich,Germany\vspace{0.05cm}
+    \item[$\bullet$] Presented my two works on Binary Networks in oral sessions at WACV 2018 in Lake Tahoe, CA/NV, USA and in R\&D Showcase, IIIT-H\vspace{0.05cm}
+      \item[$\bullet$] Presented my Subword-LSTM work in a poster session at COLING 2016 in Osaka, Japan and in R\&D Showcase, IIIT-H\vspace{0.05cm}
+      \item[$\bullet$] Completed the 1-week Undergraduate Summer School on Computer Science CSA, IISc Banglore (CSAUSS 2016) \vspace{0.05cm}
+      \item[$\bullet$] Presented my work in a talk on \textit{Learning Clustered subspaces for SBIR} at ACPR 2015 in Kuala Lumpur, Malaysia and at the annual R\&D showcase in IIIT-H- 2015\vspace{0.05cm}
+      \item[$\bullet$] Completed the 2-week IIIT-H Advanced Summer School on NLP (IASNLP-2015)
+    \end{enumerate}
+    }{2015-2018}\\
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 PROJECTS
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	 ACHIEVEMENTS
+%----------------------------------------------------------------------------------------
+%\vspace{-0.5cm}
+%\textbf{\large Technical Skills} \\
+%\begin{twenty}
+%	\myskills{Languages}{{C/C++,}, {Python,}, {Ruby,}, {BASH.}}
+%	\myskills{DevOps}{{AWS,}, {Git,}, {Chef,}, {Docker,}, {Capistrano,}, {ELK (Elasticsearch, Logstash, Kibana),}, {Jenkins,},{Postfix,}, {Redis,},{Consul,}, {Datadog and Newrelic.}}
+%    \myskills{Web Development}{{ReactJS,}, {Django,}, {PHP,}, {SCSS and Jquery.}}
+%\end{twenty}
+\end{document}
+

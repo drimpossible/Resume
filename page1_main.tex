@@ -1,0 +1,142 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.1 (8/1/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{page1_formatting} % a4paper for A4
+\usepackage{color}
+\usepackage{multicol}
+\setlength{\columnsep}{2.5cm}
+\usepackage{pgf}
+\usepackage{pgfpages}
+%
+
+%-----------------------
+% COLORS
+%-----------------------
+
+\definecolor{forestgreen}{HTML}{228B22}
+
+
+\pgfpagesdeclarelayout{boxed}
+{
+  \edef\pgfpageoptionborder{3pt}
+}
+{
+  \pgfpagesphysicalpageoptions
+  {%
+    logical pages=1,%
+  }
+  \pgfpageslogicalpageoptions{1}
+  {
+    border code=\pgfsetlinewidth{2pt}\pgfstroke,%
+    border shrink=\pgfpageoptionborder,%
+    resized width=.95\pgfphysicalwidth,%
+    resized height=.95\pgfphysicalheight,%
+    center=\pgfpoint{.5\pgfphysicalwidth}{.5\pgfphysicalheight}%
+  }%
+}
+\pgfpagesuselayout{boxed}
+\setlength{\parindent}{2cm}
+
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\cvname{Ameya Prabhu} % Your name
+% \cvjobtitle{Adventurer} % Job title/career
+
+% \cvdate{20 November 1996} % Date of birth
+% \cvaddress{OBH-22, IIIT Hyderabad\newline Hyderabad, India 500032} % Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{+91 8142060275} % Phone number
+\cvaddress{Official: (Shortened) http://bit.do/ameyaprabhucvit} % Personal website
+\cvmail{Personal: (Shortened) http://bit.do/ameyaprabhu} % Email address
+
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	 ABOUT ME
+%----------------------------------------------------------------------------------------
+
+\aboutme{} % To have no About Me section, just remove all the text and leave \aboutme{}
+
+
+
+%----------------------------------------------------------------------------------------
+%	 Relevant Courses
+%----------------------------------------------------------------------------------------
+
+
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
+
+% \skills{{English/5}, {Spanish/4}, {German/2}, {French/4}}
+% \divider
+
+%\cvskill{Spanish}{4}
+% \divider
+
+%\cvskill{German}{3}
+
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+%\skills{{pursuer of rabbits/5.8},{good manners/4},{outgoing/4.3},{polite/4},{Java/0.01}}
+
+% \skills{{C++}{5}}
+
+%------------------------------------------------
+
+% Skill text section, each skill must have a value between 0 an 6
+% \skillstext{{lovely/4},{narcissistic/3}}
+
+%----------------------------------------------------------------------------------------
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%---------------------------------------------------------------------------------------
+\vspace{-0.15cm}
+\begin{twenty} % Environment for a list with descriptions
+\textbf{\large \underline{Education}} \\\\
+\myeducation{B. Tech. (Honors) and MS by Research in Computer Science}{Center for Visual Information Technology (CVIT) and Machine Learning Lab (MLL), IIIT-H.}{August 2014}{August-2019}{8.94/10 (Graduated within top 10\% of my batch)}
+\twentyitem{{\bf \underline{Master's Thesis}: Compressing Neural Networks}}{}{The aim of my thesis is to understand various ways of compressing networks using methods ranging from pruning to quantization and knowledge distillation. The aim is to further develop these methods, evaluating the using CNNs across different tasks and architectures.}{Advisor: Dr. Anoop Namboodiri}\vspace{-0.2cm}\\
+\href{https://researchweb.iiit.ac.in/~ameya.prabhu/publications.html}{\textbf{\large \underline{{ Publications}}}}\\\vspace{-0.2cm}\\
+
+\twentyitem{\textbf{Ameya Prabhu}, Riddhiman Dasgupta, Anush Sankaran, Srikanth Tamilselvam and Senthil KK Mani. Recommending Deep Networks by Accuracy Prediction for Unknown Datasets. Under Review, CVPR 2019.}{}{\vspace{-0.15cm}For unknown classification datasets, choosing a base deep learning architecture is often time-taking and laborious process. We propose a novel technique to recommend suitable architecture from a repository of models. Further, we also predict the performance accuracy of the recommended architecture on the given query dataset, without training the model.}{}
+\twentyitem{\textbf{Ameya Prabhu*}, Girish Varma* and Anoop Namboodiri. Deep Expander Networks: Efficient Deep Networks from Graph Theory. ECCV 2018 (Oral).}{}{\vspace{-0.1cm}We utilize Expander Graphs, that have excellent connectivity properties, to develop a sparse network architecture by making efficient connection patterns between layers in CNNs. Additionally, we develop highly efficient training and inference algorithms for such networks.}{}
+\twentyitem{\textbf{Ameya Prabhu}, Vishal Batchu, Rohit Gajawada, Aurobindo Munagala and Anoop Namboodiri. Hybrid Binary Networks: Optimizing for Accuracy, Efficiency and Memory. WACV 2018 (Oral).}{}{\vspace{-0.5cm}We investigate the question of \textit{where} to binarize inputs and show that binarizing the right areas in the network could contribute significantly to speed-ups, without damaging the overall accuracy as compared to end-to-end binarized networks.}{}
+\twentyitem{\textbf{Ameya Prabhu}, Vishal Batchu, Aurobindo Munagala, Rohit Gajawada and Anoop Namboodiri. Distribution-Aware Binarization of Neural Networks for Sketch Recognition. WACV 2018 (Oral).}{}  {\vspace{-0.15cm}We provide theoretical evidence that binary networks are potentially as accurate as infinite-precision networks and present a distribution-aware approach to binarizing deep networks that allows us to achieve the full capacity of a binarized network.}{}
+\twentyitem{\textbf{Ameya Prabhu*}, Harish Krishna*, Soham Saha. Adversary is the Best Teacher: Towards Extremely Compact Neural Networks. AAAI 2018 (Student Abstracts)}{}{\vspace{-0.15cm}We propose a technique to train student-teacher networks with weak supervision. In addition, we propose a method to learn how to learn from the teacher by a unique strategy- having the student compete with a discriminator.}{}
+\twentyitem{\textbf{Ameya Prabhu*}, Aditya Joshi*, Manish Shrivastava, Vasudeva Varma. Towards Sub-Word Level Compositions for Sentiment Analysis of Hindi-English Code Mixed Data. COLING 2016.}{}{\vspace{-0.55cm}We introduced Subword-LSTMs to incorporate linguistic priors in neural network architectures and show that it learns information about sentiment value of important morphemes. We present the important subwords learnt by our model in morpheme-level feature maps.}{}\twentyitem{Koustav Ghosal, \textbf{Ameya Prabhu}, Riddhiman Dasgupta and Anoop Namboodiri. Learning Clustered Subspaces for Sketch Based Image Retrieval. ACPR 2015 (Oral).}{}{\vspace{-0.1cm}We conjectured that sketches and images belong to different subspaces and obtain a cross-modal correspondence between the two. We use Cluster-CCA to project them onto a correlated lower dimensional subspace, for performing semantic-multimodal retrieval. }{}
+\twentyitem{Vinayak Athavale, Shreenivas Bharadwaj, Monik Pamecha, {\bf Ameya Prabhu}, Manish Shrivastava, Deep Learning in Hindi NER: Tackling labelled data sparsity. ICON 2016 (Oral)}{}{\vspace{-0.1cm}I worked as a mentor, guiding a group of undergraduate students in performing NER on low resource languages like Hindi, showing that we can leverage unsupervised corpora to significantly improve the NER systems.}{}
+\end{twenty}
+\end{document}
+

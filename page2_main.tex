@@ -1,0 +1,170 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.1 (8/1/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{page2_formatting} % a4paper for A4
+\usepackage{color}
+\usepackage{multicol}
+\setlength{\columnsep}{2.5cm}
+\usepackage{pgf}
+\usepackage{pgfpages}
+%
+
+%-----------------------
+% COLORS
+%-----------------------
+
+\definecolor{forestgreen}{HTML}{228B22}
+
+
+\pgfpagesdeclarelayout{boxed}
+{
+  \edef\pgfpageoptionborder{3pt}
+}
+{
+  \pgfpagesphysicalpageoptions
+  {%
+    logical pages=1,%
+  }
+  \pgfpageslogicalpageoptions{1}
+  {
+    border code=\pgfsetlinewidth{2pt}\pgfstroke,%
+    border shrink=\pgfpageoptionborder,%
+    resized width=.95\pgfphysicalwidth,%
+    resized height=.95\pgfphysicalheight,%
+    center=\pgfpoint{.5\pgfphysicalwidth}{.5\pgfphysicalheight}%
+  }%
+}
+\pgfpagesuselayout{boxed}
+\setlength{\parindent}{2cm}
+
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\cvname{} % Your name
+% \cvjobtitle{Adventurer} % Job title/career
+
+% \cvdate{20 November 1996} % Date of birth
+% \cvaddress{OBH-22, IIIT Hyderabad\newline Hyderabad, India 500032} % Short address/location, use \newline if more than 1 line is required
+%\cvnumberphone{+91 8142060275} % Phone number
+%\cvmail{ http://bit.do/ameyaprabhu} % Email address
+%\cvmail{researchweb.iiit.ac.in/~ameya.prabhu} % Personal website
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	 ABOUT ME
+%----------------------------------------------------------------------------------------
+
+\aboutme{} % To have no About Me section, just remove all the text and leave \aboutme{}
+
+
+
+%----------------------------------------------------------------------------------------
+%	 Relevant Courses
+%----------------------------------------------------------------------------------------
+
+
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
+
+% \skills{{English/5}, {Spanish/4}, {German/2}, {French/4}}
+% \divider
+
+%\cvskill{Spanish}{4}
+% \divider
+
+%\cvskill{German}{3}
+
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+%\skills{{pursuer of rabbits/5.8},{good manners/4},{outgoing/4.3},{polite/4},{Java/0.01}}
+
+% \skills{{C++}{5}}
+
+%------------------------------------------------
+
+% Skill text section, each skill must have a value between 0 an 6
+% \skillstext{{lovely/4},{narcissistic/3}}
+
+%----------------------------------------------------------------------------------------
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%---------------------------------------------------------------------------------------
+\vspace{-0.4cm}
+\begin{twenty}
+\textbf{\large \underline{Work Experience}}\\\\
+\twentyitem{{\bf Machine Learning Intern, Verisk Analytics}}{}{\vspace{-0.15cm}Working on Uncertainty Estimation for Bayesian Deep Networks with applications to reinforcement learning. Working towards a publication in CVPR '19 on the same.}{Aug '18 - Current}
+\twentyitem{{\bf Machine Learning Intern, IBM-Research, India}}{}{\vspace{-0.15cm}Worked on performing trainless neural architecture search efficiently with limited computational resources, learning unsupervised representations for neural networks for IBM Watson. Submitted a paper to AAAI '19 as a result of the internship. Awarded best intern poster for outstanding research done in the internship.}{May '18 - Aug '18}
+\twentyitem{{\bf Undergraduate Research Assistant - CVIT, IIIT-H}}{}{\vspace{-0.15cm}Worked on developing compressed representations for limited resourced systems, starting off with neural network compression for CNNs in the domain of Computer Vision. Published two oral papers in WACV 2018 on Binary Networks as a part of the assistantship.}{From Jan '16 - Aug '18}
+\twentyitem{{\bf Undergraduate Research Assistant - LTRC, IIIT-H}}{}{\vspace{-0.15cm}Worked on developing resources for enabling systems to work on low-resource Hindi-English Code-mixed data, along with contributing machine learning algorithms for the same. Published a full paper in COLING on Sub-word LSTMs as a part of the assistantship.}{Jan '15 - Jan '16} 
+\twentyitem{Machine Learning Intern - WizCal Inc.}{}
+{Analyzed the corporate data, developed their feature processing pipeline and designed time-series processing based algorithms to build intelligent meeting-scheduling systems.}{Monsoon '16} 
+
+\twentyitem{\large \underline{Teaching Assistantships}}{}
+{I contributed by teaching in tutorial sessions, setting and grading assignments, supervising course projects in the following courses:\vspace{0.15cm}
+    \begin{enumerate}
+    \item[$\bullet$] {\bf Computer Vision} \textit{(Spring '18)}: The graduate-level introductory machine learning course (Instructor: Prof. Anoop Namboodiri, CVIT)\vspace{0.15cm}
+    \item[$\bullet$] {\bf Foundations of AI and ML} \textit{(Sping '18)}: Introduction to machine learning in an educational initiative by IIIT-H for professionals. (Instructor: Prof. C.V. Jawahar, CVIT)\vspace{0.15cm}
+      \item[$\bullet$] {\bf Statistical Methods in AI} \textit{(Monsoon '17)}: The graduate-level introductory machine learning course (Instructor: Prof. Vineet Gandhi, CVIT)\vspace{0.15cm}
+      \item[$\bullet$] {\bf Digital Signal Analysis and App.} \textit{(Spring '17)}: The introductory undergraduate signal processing course (Instructor: Prof. Vineet Gandhi, CVIT)\vspace{0.15cm}
+      \item[$\bullet$] {\bf Computer Programming} \textit{(Monsoon '16)}: The introductory undergraduate programming course (Instructor: Prof. Anoop Namboodiri, CVIT)\vspace{0.15cm}
+      \item[$\bullet$] {\bf Electronics Workshop-1} \textit{(Spring '16)}: The undergraduate freshman year course primarily designing analog circuits with a hands-on component involving handling lab equipment. (Instructor: Prof. Madhava Krishna, RRC)\vspace{0.15cm}
+      \item[$\bullet$] {\bf Digital Logic and Processor Design} \textit{(Monsoon '15)}: The undergraduate digital processor design course consisting of boolean logic to sequential logic, ALU designs, and programming basic 8085-like processor (Instructor: Prof. Vijay Prakash, RRC)
+    \end{enumerate}
+    }{2015-2018}
+    \vspace{0.3cm}
+\textbf{\large \underline{ML Projects}} \\
+\twentyitem{Neural Algorithm for Artistic Style in Sketches}{}{\vspace{-0.15cm}Implemented the style transfer paper to transfer color between two images experimenting with different loss functions for the content and style loss and extending it to color sketches, obtaining an automatic colorization method for sparse domains}{Spring'17}
+\twentyitem{Unsupervised semantic sentence retrieval for use in Chatbot Systems}{}{\vspace{-0.1cm}Developed a system to semantically rank relevant domain-related sentences using KNN and Skip-thought vectors to the current sentences fine tuned on a scraped Reddit dataset and showed that it is better than using TF-IDF based inverted index.}{Spring'16}
+
+\end{twenty}
+
+
+%----------------------------------------------------------------------------------------
+%	 PROJECTS
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	 ACHIEVEMENTS
+%----------------------------------------------------------------------------------------
+%\vspace{-0.5cm}
+%\textbf{\large Technical Skills} \\
+%\begin{twenty}
+%	\myskills{Languages}{{C/C++,}, {Python,}, {Ruby,}, {BASH.}}
+%	\myskills{DevOps}{{AWS,}, {Git,}, {Chef,}, {Docker,}, {Capistrano,}, {ELK (Elasticsearch, Logstash, Kibana),}, {Jenkins,},{Postfix,}, {Redis,},{Consul,}, {Datadog and Newrelic.}}
+%    \myskills{Web Development}{{ReactJS,}, {Django,}, {PHP,}, {SCSS and Jquery.}}
+%\end{twenty}
+\end{document}
+
