@@ -217,17 +217,6 @@
         % COURSES SECTION
         %-----------------------------------------------
         %\profilesection{}\\
-        	\vspace{\parsep}
-        	\hspace{0.1cm}
-        	 { \space -Economics and Privacy \\
-       		\vspace{\parsep}
-            \hspace{2.2cm}
-            in Blockchains}\\
-            \vspace{\parsep}
-            \hspace{2cm}
-            {\faAngleRight \space Database Systems}
-           % \vspace{\parsep}
-            \hspace{1.8cm} 
         
         \profilesection{ML Frameworks}\\
         	%\vspace{\parsep}
@@ -238,7 +227,7 @@
             {\faAngleRight \space Deep Learning: PyTorch,\\
             \vspace{\parsep}
             \hspace{2.2cm}
-            Keras \& Tensorflow (Basic)}\\
+            Keras \& Tensorflow}\\
              \vspace{\parsep}
             \hspace{2cm}
             {\faAngleRight \space Parallel Computing: MPI,\\
@@ -266,7 +255,7 @@
         %----------------------------------------------- 
 		\profilesection{Research Activities}\\
         \begin{twenty}
-        \positionsheld{Peer Reviewing Activities}{CVPR 2019\\ICVGIP 2018}{(2018-Present)}\\
+        \positionsheld{Peer Reviewing Activities}{AAAI 2020 \\ICCV 2019 \\CVPR 2019 (Outstanding}{ Reviewer)}\\
         \positionsheld{Grants \& Scholarships}{Google India Travel Grant\\CVIT Student Travel Grant}{(2018-Present)}\\
 		\end{twenty}
         

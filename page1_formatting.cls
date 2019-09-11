@@ -88,8 +88,7 @@
 
 % Define custom commands for CV info
 \newcommand{\cvdate}[1]{\renewcommand{\cvdate}{#1}}
-\newcommand{\cvmail}[1]{\renewcommand{\cvmail}{#1}}
-\newcommand{\cvnumberphone}[1]{\renewcommand{\cvnumberphone}{#1}}
+
 \newcommand{\cvaddress}[1]{\renewcommand{\cvaddress}{#1}}
 \newcommand{\cvsite}[1]{\renewcommand{\cvsite}{#1}}
 \newcommand{\aboutme}[1]{\renewcommand{\aboutme}{#1}}
@@ -208,9 +207,9 @@
 		\renewcommand{\arraystretch}{1.4}
 		\begin{tabular}{p{0.5cm} @{\hskip 0.05cm}p{5cm}}
 			
-			\ifthenelse{\equal{\cvnumberphone}{}}{}{\textsc{\small\icon{\Telefon}} & \cvnumberphone\\}
-             \ifthenelse{\equal{\cvaddress}{}}{}{\textsc{\small\icon{\faGlobe}} & \href{http://bit.do/ameyaprabhucvit}{http://bit.do/ameyaprabhucvit (Official)}\\}
-			\ifthenelse{\equal{\cvmail}{}}{}{\textsc{\small\icon{\faGlobe}} & \href{http://bit.do/ameyaprabhu}{http://bit.do/ameyaprabhu (Personal)}}
+			%\ifthenelse{\equal{\cvnumberphone}{}}{}{\textsc{\small\icon{\Telefon}} & \cvnumberphone\\}
+             \ifthenelse{\equal{\cvaddress}{}}{}{\textsc{\small\icon{\faGlobe}} & \href{http://drimpossible.github.io}{http://drimpossible.github.io}\\}
+			%\ifthenelse{\equal{\cvmail}{}}{}{\textsc{\small\icon{\faGlobe}} & \href{http://bit.do/ameyaprabhu}{http://bit.do/ameyaprabhu (Personal)}}
             %\ifthenelse{\equal{\cvsite}{}}{}{\textsc{\small\icon{\faGlobe}} }
 		\end{tabular}
         
@@ -233,19 +232,22 @@
             \profilesection{Research Interests}
             \vspace{\parsep}
             \hspace{1.9cm}
-            {\faAngleRight \space Uncertainty Estimation}\\
+            {\faAngleRight \space Continual Learning}\\
             \vspace{\parsep}
             \hspace{1.9cm}
-            {\faAngleRight \space Neural Model Compression}\\
+            {\faAngleRight \space Model Compression}\\
             \vspace{\parsep}
             \hspace{1.9cm}
-            {\faAngleRight \space Information Theory}\\
+            {\faAngleRight \space Bayesian Deep Learning}\\
             \vspace{\parsep}
             \hspace{1.9cm}
-            {\faAngleRight \space Computer Vision}\\
+            {\faAngleRight \space Active Learning}\\
             \vspace{\parsep}
             \hspace{1.9cm}
-            {\faAngleRight \space Graph Theory}
+            {\faAngleRight \space PAC Learning}\\
+            \vspace{\parsep}
+            \hspace{1.9cm}
+            {\faAngleRight \space Graph Neural Networks}
             \vspace{\parsep}
             
 		 \profilesection{Past Interests}\\
@@ -257,19 +259,19 @@
             {\faAngleRight \space Submodular Optimization}\\
             \vspace{\parsep}
             \hspace{1.9cm}
-            {\faAngleRight \space Neural Machine Translation}\\
+            {\faAngleRight \space Language Modelling}\\
             \vspace{\parsep}
             \hspace{1.9cm}
             {\faAngleRight \space Analysis of Codemixed Data}\\
             \vspace{\parsep}
             \hspace{1.9cm}
-            {\faAngleRight \space Sentiment Analysis}\\
+            {\faAngleRight \space Knowledge Graphs in NLP}\\
             \vspace{\parsep}
             \hspace{1.9cm}
-            {\faAngleRight \space Multimodal Representation \\
+            {\faAngleRight \space Efficient Multimodal  \\
             \vspace{\parsep}
             \hspace{2.2cm}
-            Learning (NLP \& Vision)}\\
+            Representation Learning}\\
             \vspace{\parsep}
             
 		\profilesection{Selected Courses}\\
@@ -281,7 +283,7 @@
             for Neural Networks}\\
             \vspace{\parsep}
             \hspace{2cm}
-            {\faAngleRight \space Statistical Methods in AI}\\
+            {\faAngleRight \space Machine Learning}\\
             \vspace{\parsep}
             \hspace{2cm}
             {\faAngleRight \space Artificial Intelligence}\\
@@ -290,10 +292,10 @@
             {\faAngleRight \space Computer Vision}\\
             \vspace{\parsep}
             \hspace{2cm}
-            {\faAngleRight \space Natural Language \\
+            {\faAngleRight \space Advances in Natural \\
             \vspace{\parsep}
             \hspace{2.2cm}
-            Processing }\\
+            Language Processing }\\
             \vspace{\parsep}
             \hspace{2cm}
             {\faAngleRight \space Digital Image Processing}\\
@@ -302,28 +304,24 @@
             {\faAngleRight \space Distributed Systems}\\ 
             \vspace{\parsep}
             \hspace{2cm} 
+            {\faAngleRight \space Advanced Cryptography \\ 
+            \vspace{\parsep}
+            \hspace{2cm}
+			}            
+            {\faAngleRight \space Programming Languages \\ 
+            \vspace{\parsep}
+            \hspace{2cm}
+            }
             {\faAngleRight \space Data Structures}\\
             \vspace{\parsep}
             \hspace{2cm}
             {\faAngleRight \space Algorithms}\\
             \vspace{\parsep}
             \hspace{2cm}
-            {\faAngleRight \space Principle of  Information \\ 
-            \vspace{\parsep}
-            \hspace{2.2cm} 
-            Security}\\
-            \vspace{\parsep}
-            \hspace{2cm}
-            {\faAngleRight \space Principle of  Programming \\ 
-            \vspace{\parsep}
-            \hspace{2.2cm} 
-            languages}\\
-            \vspace{\parsep}
-            \hspace{2cm}
-            {\faAngleRight \space Project: Intro to Crypto-  \\ 
+            {\faAngleRight \space Project: Privacy in ML}
             \vspace{\parsep}
             \hspace{2cm} 
-            }
+            
             
        % \profilesection{TA in Courses}
        % \begin{twenty}
